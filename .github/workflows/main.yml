@@ -67,7 +67,7 @@ jobs:
           git show -s --format="%s" > release_notes.md
 
       - name: Release
-        if: github.repository_owner == 'Pteryon'
+        if: github.repository_owner == 'decafhotchocolate'
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -80,7 +80,7 @@ jobs:
           prerelease: false
 
       - name: Upload Main
-        if: github.repository_owner == 'Pteryon'
+        if: github.repository_owner == 'decafhotchocolate'
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
