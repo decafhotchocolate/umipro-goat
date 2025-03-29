@@ -1676,7 +1676,7 @@ numalias config_main_lsp2,%0 : inc %0
 ;8061 - animated rain
 
 if %init_done = 1 jumpf 
-	mov %bgm_vol,70 
+	mov %bgm_vol,100 
 	mov %sfx_vol,100
 	mov %dlg_vol,100 
 	mov %textspeed,5
@@ -1696,7 +1696,7 @@ if %init_done = 1 jumpf
 
 	mov %op_ed_song_subtitles,2
 	mov %rumble_strength,50
-	mov %bgm_chapter_display,0
+	mov %bgm_chapter_display,1
 	mov %sskip_turbo,0
 
 	for %Free1 = flag_scenario_1_op to flag_scenario_8_ura
@@ -13734,107 +13734,107 @@ lsp 4,":c;graphics\omake\touhou_1.png",0,0
 print 28
 
 mov %tmp,20
-lsph %tmp,":s#ffff00ジェシー！！！",0,0 : inc %tmp
-lsph %tmp,":s#00ffff　キャーーーーーーーー！！！",0,0 : inc %tmp
-lsph %tmp,":s#80ff00　　　　　　　　　　　ｷﾀ━━━(ﾟ∀ﾟ)━━━!!!! ",0,0 : inc %tmp
-lsph %tmp,":s#ff0000☆つるぺったん☆　　　　　　　　　　　ジェシ様！！！",0,0 : inc %tmp
-lsph %tmp,":s#ffff00ジェシジェシジェシさまぁああぁああ〜〜〜〜〜〜☆",0,0 : inc %tmp
-lsph %tmp,":s#0000ffらめぇ〜〜〜〜〜　落ちるぅ〜〜〜〜",0,0 : inc %tmp
-lsph %tmp,":s#ffffff　　　　　　　ジェシさま最高！！！",0,0 : inc %tmp
-lsph %tmp,":s#ff8040　お姉様ぁあああぁああ〜〜〜〜☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00杰西——！！！",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　呀————————！！！",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　　　　　　　　　　　来力来力━━━(ﾟ∀ﾟ)━━━!!!! ",0,0 : inc %tmp
+lsph %tmp,":s#ff0000☆光溜溜平坦坦☆　　　　　　　　　　　杰西大人！！！",0,0 : inc %tmp
+lsph %tmp,":s#ffff00杰西杰西杰西大人啊啊啊啊啊啊～～～～～～☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff不行了～～～～～　要掉下去了～～～～",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　　　　　　　杰西大人赛高！！！",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　姐姐大人啊啊啊啊啊啊～～～～☆",0,0 : inc %tmp
 
 mov %tmp,30
 lsph %tmp,":a;graphics\omake\pettan.png",0,0 : inc %tmp
 setwindow4 31,16,50,2500,0,50,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#ff0000（じゃない！！！）",0,0 : inc %tmp
+lsph %tmp,":s#ff0000（个头啦！！！）",0,0 : inc %tmp
 
-lsph %tmp,":s#80ff00Title ：つるぺったん",0,0 : inc %tmp
+lsph %tmp,":s#80ff00Title ：光溜溜平坦坦",0,0 : inc %tmp
 lsph %tmp,":s#00ffffArtist：Silver Forest ",0,0 : inc %tmp
 
 
 setwindow4 31,16,72,2500,0,72,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
 mov %tmp,10
-lsph %tmp,":s#00ffffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ff8040　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#80ff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#0000ffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ff0000　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#00ffff　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffffff　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
 
 mov %tmp,40
-lsph %tmp,":s#ff0000　　　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　　　( ﾟ∀ﾟ)o彡平坦坦☆平坦坦☆光溜溜平坦坦☆☆",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡",0,0 : inc %tmp
-lsph %tmp,":s#00ffff　　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#80ff00( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　　( ﾟ∀ﾟ)o彡平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00( ﾟ∀ﾟ)o彡平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
 lsph %tmp,":s#0000ff　　( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡",0,0 : inc %tmp
 lsph %tmp,":s#00ffff　　　　　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ff8040　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffff00　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　( ﾟ∀ﾟ)o彡平坦坦☆平坦坦☆光溜溜平坦坦☆,0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　( ﾟ∀ﾟ)o彡平坦坦☆平坦坦☆光溜溜平坦坦☆",0,0 : inc %tmp
 
 
 mov %tmp,50
 setwindow4 31,16,72,2500,0,72,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#00ffffぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffff00　　　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　　平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
 
 setwindow4 31,16,50,2500,0,50,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#ff8040　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#80ff00　　　　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#0000ff　　　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ff0000　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　　　　　平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff　　　　平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
 
 setwindow4 31,16,72,2500,0,72,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#00ffff　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffffffぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffff平坦坦　　　平坦坦　　　年糕压扁扁☆",0,0 : inc %tmp
 
 
 mov %tmp,60
 setwindow4 31,16,72,2500,0,72,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#00ffffぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffff00　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
 
 setwindow4 31,16,50,2500,0,50,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#ff8040　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#80ff00ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#0000ff　　　　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ff0000　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　　平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff　　　　　　平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
 
 setwindow4 31,16,72,2500,0,72,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#00ffff　　　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffffffぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　　　　平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffff平坦坦　　　平坦坦　　　胸部平坦坦☆",0,0 : inc %tmp
 
 
 mov %tmp,70
 setwindow4 31,16,36,2500,0,36,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#ffff00　　　　　　　　許可取ってんのかよ氏ね",0,0 : inc %tmp
-lsph %tmp,":s#ffff00　　　　　　　　　　　　　　　　↑ちゃんと取りました！",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　　　　　　甘霖娘有没有授权啊去shi吧",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　　　　　　　　　　　　　　↑有授权哦！",0,0 : inc %tmp
 lsph %tmp,":a;graphics\omake\pettan_aa2.png",270,0 : inc %tmp
 
 setwindow4 31,16,72,2500,0,72,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#ff8040　　　　全俺が萌えた！！！",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　　　我都可以！！！",0,0 : inc %tmp
 
 setwindow4 31,16,50,2500,0,50,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
 lsph %tmp,":s#00ffff☆　　（　＾∇＾）σ）≧∇≦）　　☆",0,0 : inc %tmp
 
-lsph %tmp,":s#ff0000［←樹海］",0,0 : inc %tmp
-lsph %tmp,":s#ff0000　　||　　　　オワタ ┗(^o^）┓三",0,0 : inc %tmp
+lsph %tmp,":s#ff0000［←树海］",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　||　　　　完蛋力 ┗(^o^）┓三",0,0 : inc %tmp
 lsph %tmp,":s#ff0000　　||　　　　　　　　┏┗　 三",0,0 : inc %tmp
 
 mov %tmp,80
 setwindow4 31,16,50,2500,0,50,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#ffff00ヽξ(`・３・)ﾉ うぜぇぜ！",0,0 : inc %tmp
+lsph %tmp,":s#ffff00ヽξ(`・３・)ﾉ 烦死嘞！",0,0 : inc %tmp
 lsph %tmp,":s#ffff00　　（　へ）",0,0 : inc %tmp
 lsph %tmp,":s#ffff00　　 く ",0,0 : inc %tmp
 
 setwindow4 31,16,36,2500,0,36,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-lsph %tmp,":s#ff0000この早さなら言える！　朱志香は俺の嫁！！！",0,0 : inc %tmp
-lsph %tmp,":s#ff0000　　　　　　　　　　　　　　いや、俺の嫁だ！！！",0,0 : inc %tmp
-lsph %tmp,":s#ff0000　　　　　　　　　　　　　　　　　　　朱志香なら、俺の隣で寝ているぜ",0,0 : inc %tmp
+lsph %tmp,":s#ff0000这个速度没人看得见！朱志香是我老婆！！！",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　　　　　　　　　　　　　滚是我老婆！！！",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　　　　　　　　　　　　　　　　　　朱志香就睡在我旁边呢",0,0 : inc %tmp
 
 
-;lsph %tmp,":s#ff0000　　　　うぜぇぜ！ヽξ(`・３・)ﾉ ",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　　　　烦死嘞！ヽξ(`・３・)ﾉ ",0,0 : inc %tmp
 ;lsph %tmp,":s#ff0000　　　　　　　　　　　（へ　）",0,0 : inc %tmp
 ;lsph %tmp,":s#ff0000　　　 　　　　　　　　　　>  ",0,0 : inc %tmp
 
@@ -13843,14 +13843,14 @@ mov %tmp,110
 lsph %tmp,":s#ffffff＼　　　∩─−、　　　＝＝ ",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　＼／　●　､_ ｀ヽ 　　＝＝＝",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　／＼（　●　●　| つ",0,0 : inc %tmp
-lsph %tmp,":s#ffffff　| 　Ｘ＿入＿ノ　　ミ　　　そんな貧乳で俺様が釣られクマ――",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　| 　Ｘ＿入＿ノ　　ミ　　　这种贫乳可是钓不到本熊的啊",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　、　（＿／　　　ノ　／⌒l ",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　／＼＿＿＿ノ＿／　／　　＝＝＝＝",0,0 : inc %tmp
 lsph %tmp,":s#ffffffく　　　　　　　　　　ノ　　＝＝＝＝",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　＼　＼＿　　　　　＼",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　　＼＿＿）　　　　　＼　　　＝＝＝＝　（⌒",0,0 : inc %tmp
 lsph %tmp,":s#ffffff　　　　＼　　＿＿＿＿　＼＿＿　　（⌒（⌒",0,0 : inc %tmp
-lsph %tmp,":s#ffffff　　　　　＼＿＿＿）＿＿＿）（⌒　（⌒　　ズザザザ",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　　　　　＼＿＿＿）＿＿＿）（⌒　（⌒　　嗖嗖嗖",0,0 : inc %tmp
 
 
 
@@ -13860,7 +13860,7 @@ lsph %tmp,":a;graphics\omake\pettan_aa1.png",270,0 : inc %tmp
 lsph %tmp,":a;graphics\omake\pettan_aa3.png",270,0 : inc %tmp
 
 setwindow4 31,16,50,2500,0,50,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
-;lsph %tmp,":s#ff0000全俺が萌えた！！！",0,0 : 
+;lsph %tmp,":s#ff0000我都可以！！！",0,0 : 
 inc %tmp
 
 setwindow4 31,16,50,2500,0,50,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
@@ -13875,14 +13875,14 @@ lsph %tmp,":s#ffffff／hidden／hidden／hidden／hidden／hidden／hidden",0,0 
 
 setwindow4 31,16,72,2500,0,72,%textspeed,1,0,0,1,1,#999999,0,0,1919,1079
 mov %tmp,100
-lsph %tmp,":s#ffff00きゃーきゃーきゃーーー！！！",0,0 : inc %tmp
+lsph %tmp,":s#ffff00呀—呀—呀———！！！",0,0 : inc %tmp
 lsph %tmp,":s#00ffff　にゃり〜〜〜〜〜ん☆",0,0 : inc %tmp
-lsph %tmp,":s#80ff00（＞０＜）★タイが曲がっていてよ★（＞０＜） ",0,0 : inc %tmp
-lsph %tmp,":s#ff0000☆つるぺったん☆",0,0 : inc %tmp
-lsph %tmp,":s#ffff00ジェシジェシジェシさまぁああぁああ〜〜〜〜〜〜☆",0,0 : inc %tmp
-lsph %tmp,":s#0000ffらめぇ〜〜〜〜〜　落ちるぅ〜〜〜〜",0,0 : inc %tmp
-lsph %tmp,":s#ffffff　　　　　　　ジェシさま最高！！！",0,0 : inc %tmp
-lsph %tmp,":s#ff8040　お姉様ぁあああぁああ〜〜〜〜☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00（＞０＜）★领带歪掉了哟★（＞０＜） ",0,0 : inc %tmp
+lsph %tmp,":s#ff0000☆光溜溜平坦坦☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00杰西杰西杰西大人啊啊啊啊啊啊～～～～～～☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff不行了～～～～～　要掉下去了～～～～",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　　　　　　　杰西大人赛高！！！",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　姐姐大人啊啊啊啊啊啊～～～～☆",0,0 : inc %tmp
 
 
 bgmplay 94,100,1
@@ -14730,20 +14730,13 @@ goto *boot_logo_skip_100
 	mov %Free1,off
 	mov %anim_mode,off
 
-	if %title_skip > 0 goto *boot_logo_no_video
+	if %UMINEKOEND > 0 mov %Free1,on
+	if $flag_scenario_1_op == "●" mov %Free1,on
+	if %title_skip > 0 mov %Free1,off
+	if %Free1 != on goto *boot_logo_no_video
 
-	if %CHIRU_MODE != 0 jumpf
-		if %UMINEKOEND > 0 || $flag_scenario_1_op == "●" mov %Free1,"op1"
-		if $flag_scenario_4_op == "●" mov %Free1,"op2"
-		if %UMINEKOEND >= 50 mov %Free1,"op"
-	~
-	if %CHIRU_MODE != 1 jumpf
-		if %UMINEKOEND >= 60 || $flag_scenario_5_op == "●" mov %Free1,"op56"
-		if %UMINEKOEND >= 80 || $flag_scenario_7_op == "●" mov %Free1,"op78"
-		if %UMINEKOEND >= 90 mov %Free1,"op4"
-	~
-	
-	if %Free1 == off goto *boot_logo_no_video
+	if %CHIRU_MODE == 0 mov $Free1,"op"
+	if %CHIRU_MODE == 1 mov $Free1,"op4"
 
 	pam 100,$Free1,1
 	mov %Free1,off
@@ -15181,13 +15174,8 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 	if %CHIRU_MODE = 1 && %BtnRes = t_btn_omake_lsp mov %scenario_Number,5 mov %omake,1 : goto *umi_start
 	if %BtnRes = t_btn_omake_end_lsp gosub *omake_sub_menu_end
 	; Show the op only after ep1 prologue
-	if %CHIRU_MODE == 1 jumpf
 	if %BtnRes = -5 && %UMINEKOEND > 0 goto *show_opening
 	if %BtnRes = -5 && $flag_scenario_1_op == "●" goto *show_opening
-	goto *b_title_button_loop
-	~
-	if %BtnRes = -5 && %UMINEKOEND >= 60 goto *show_opening
-	if %BtnRes = -5 && $flag_scenario_5_op == "●" goto *show_opening
 	goto *b_title_button_loop
 
 *switch_game
@@ -15209,51 +15197,26 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 	definereset
 
 *show_opening
-	if %CHIRU_MODE == 1 goto *show_opening_chiru
+	if %CHIRU_MODE == 0 mov $Free1,"op" : goto *show_opening_do
 	
 	;OP level
-	mov %Free1,0                               ;1
-	if $flag_scenario_4_op == "●" mov %Free1,1 ;14
-	if %UMINEKOEND >= 50          mov %Free1,2 ;14Rondo
+	mov %Free1,0
+	if %UMINEKOEND > 50           mov %Free1,1 ;56
+	if $flag_scenario_5_op == "●" mov %Free1,1 ;56
+	if %UMINEKOEND >= 70          mov %Free1,2 ;78
 
 	if %Free1 != 0 jumpf
-		mov $Free1,"op1"
+		mov $Free1,"op4"
 	~
 	if %Free1 != 1 jumpf
-		if %current_op == 0 mov $Free1,"op2"
-		if %current_op == 1 mov $Free1,"op1"
+		if %current_op == 0 mov $Free1,"op56"
+		if %current_op == 1 mov $Free1,"op4"
 		inc %current_op
 		if %current_op = 2 mov %current_op,0
 	~
 	if %Free1 != 2 jumpf
-		if %current_op == 0 mov $Free1,"op"
-		if %current_op == 1 mov $Free1,"op2"
-		if %current_op == 2 mov $Free1,"op1"
-		inc %current_op
-		if %current_op = 3 mov %current_op,0
-	~
-	goto *show_opening_do
-	
-*show_opening_chiru
-	
-	;OP level
-	mov %Free1,0                               ;5
-	if $flag_scenario_7_op == "●" mov %Free1,1 ;57
-	if %UMINEKOEND >= 80          mov %Free1,1 ;57
-	if %UMINEKOEND >= 90          mov %Free1,2 ;57Nocturne
-
-	if %Free1 != 0 jumpf
-		mov $Free1,"op56"
-	~
-	if %Free1 != 1 jumpf
 		if %current_op == 0 mov $Free1,"op78"
-		if %current_op == 1 mov $Free1,"op56"
-		inc %current_op
-		if %current_op = 2 mov %current_op,0
-	~
-	if %Free1 != 2 jumpf
-		if %current_op == 0 mov $Free1,"op4"
-		if %current_op == 1 mov $Free1,"op78"
+		if %current_op == 1 mov $Free1,"op4"
 		if %current_op == 2 mov $Free1,"op56"
 		inc %current_op
 		if %current_op = 3 mov %current_op,0
@@ -15291,9 +15254,6 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 		if %CHIRU_MODE = 1 lsph t_txt_ep7_lsp,t_txt_ep7,100,470
 		if %CHIRU_MODE = 1 lsph t_txt_ep8_lsp,t_txt_ep8,100,470
 		
-		if %CHIRU_MODE == 0 && $USE_DISCORD == "noval" discordrpc "~Rondo of the Witch and Reasoning~", "In title screen", "butterfly", "You should read Umineko now!!!", "edsmiley", "Discord rich presence integration by Ed", $Free1
-		if %CHIRU_MODE == 1 && $USE_DISCORD == "noval" discordrpc "Scattering: ~Nocturne of Truth and Illusions~", "In title screen", "butterfly", "You should read Umineko now!!!", "edsmiley", "Discord rich presence integration by Ed", $Free1
-
 		lsph t_txt_ep1_4_lsp,t_txt_ep1_4,100,470
 		lsph t_txt_ep5_8_lsp,t_txt_ep5_8,100,470
 		
@@ -19667,7 +19627,7 @@ return
 	flush 7
 
 	lsp2 s0_29,cinema_logo_2,500,-50,100,100,0
-	set_hotspot s0_29,"480","280"
+	set_hotspot s0_29,"480","320"
 	flush 18,3333,msk_down
 
 	wait 1500
@@ -19681,7 +19641,7 @@ return
 
 	csp -10
     lsp2 s0_29,cinema_logo_2,500,-50,100,100,0
-    set_hotspot s0_29,"480","280"
+    set_hotspot s0_29,"480","320"
 
 	skip_on
 return
@@ -19707,7 +19667,7 @@ return
     wait 1000
 
 	lsp2 s0_29,cinema_logo_2,500,-50,100,100,0
-	set_hotspot s0_29,"480","280"
+	set_hotspot s0_29,"480","320"
 	flush 18,3333,msk_down
 
 	wait 1000
@@ -19717,7 +19677,7 @@ return
 
 	csp -10
 	lsp2 s0_29,cinema_logo_2,500,-50,100,100,0
-    set_hotspot s0_29,"480","280"
+    set_hotspot s0_29,"480","320"
 
 	skip_on
 return
@@ -23300,19 +23260,10 @@ gosub *pam_audio
 
 ;video
 mov $anim_sprite,"video"
-
-if $anim_file = "op1" || $anim_file = "op2" jumpf
-	if $anim_file = "op_new" mov $anim_file,"op"
-	if %video_res = 1 mov $anim_file,$anim_sprite+"\720p\"+$anim_file+".mp4"
-	if %video_res = 0 mov $anim_file,$anim_sprite+"\1080p\"+$anim_file+".mp4"
-~
-
-if $anim_file != "op1" && $anim_file != "op2" jumpf
-	mov $anim_sprite,"legacy"
-	if $anim_file = "op2" mov $anim_file,"op"
-	if %video_res = 1 mov $anim_file,$anim_sprite+"\720p\"+$anim_file+".mp4"
-	if %video_res = 0 mov $anim_file,$anim_sprite+"\1080p\"+$anim_file+".mp4"
-~
+if %legacy_op = 1 && $anim_file = "op" mov $anim_sprite,"legacy"
+if $anim_file = "op_new" mov $anim_file,"op"
+if %video_res = 1 mov $anim_file,$anim_sprite+"\720p\"+$anim_file+".mp4"
+if %video_res = 0 mov $anim_file,$anim_sprite+"\1080p\"+$anim_file+".mp4"
 
 fileexist %track_id,$anim_file
 if %track_id == 0 return ;do not play missing videos
@@ -23351,16 +23302,6 @@ if $anim_file != "op" jumpf
 	if %legacy_op == off dwaveload 9,"sound\bgm\op.ogg" 
 	if %legacy_op == on  dwaveload 9,"legacy\bgm\op.ogg" 
 	mov %track_id,1012 : goto *pam_audio_ok
-~
-
-if $anim_file != "op1" jumpf
-	dwaveload 9,"legacy\bgm\op1.ogg" 
-	mov %track_id,1001 : goto *pam_audio_ok
-~
-
-if $anim_file != "op2" jumpf
-	dwaveload 9,"legacy\bgm\op.ogg" 
-	mov %track_id,1002 : goto *pam_audio_ok
 ~
 
 if $anim_file != "op4" jumpf
@@ -24648,8 +24589,6 @@ if %BGM_Id == 1010	mov $BGM_Play,"sound\bgm\bgm_final.ogg" : gosub *bgm_title_la
 if %BGM_Id == 1013  mov $BGM_Play,"sound\bgm\bgm_final_chiru.ogg" : gosub *bgm_title_language : return
 ;Extra
 if %BGM_Id == 94	mov $BGM_Play,"sound\bgm\umib_094.ogg" : gosub *bgm_title_language : return
-if %BGM_Id == 1001  mov $BGM_Play,"legacy\bgm\op1.ogg" : gosub *bgm_title_language : return
-if %BGM_Id == 1002  mov $BGM_Play,"legacy\bgm\op.ogg" : gosub *bgm_title_language : return
 if %BGM_Id == 1011	mov $BGM_Play,"sound\bgm\system0.ogg" : gosub *bgm_title_language : return
 if %legacy_op == off && %BGM_Id == 1012	mov $BGM_Play,"sound\bgm\op.ogg" : gosub *bgm_title_language : return
 if %legacy_op == on  && %BGM_Id == 1012 mov $BGM_Play,"legacy\bgm\op.ogg" : gosub *bgm_title_language : return
@@ -24858,14 +24797,12 @@ if %BGM_Id == 193 	mov $BGM_Title,"Flying" : return
 if %BGM_Id == 194 	mov $BGM_Title,"lastendconductor" : return
 if %BGM_Id == 195 	mov $BGM_Title,"Revelations" : return
 if %BGM_Id == 240 	mov $BGM_Title,"Cocoon of White Dreams -Ricordando il passato-" : return
-if %BGM_Id == 241 	mov $BGM_Title,"When the Seagulls Cry (ED)" : return
+if %BGM_Id == 241 	mov $BGM_Title,"When the Seagulls Cry" : return
 if %BGM_Id == 1000	mov $BGM_Title,"SuiSui☆SWEETS(^-^)" : return
 if %BGM_Id == 1010	mov $BGM_Title,"Bring The Fate" : return
 if %BGM_Id == 1013  mov $BGM_Title,"Bring The Fate(Ver chiru)" : return
 ;Extra
 if %BGM_Id == 94	mov $BGM_Title,"Tsurupettan" : return
-if %BGM_Id == 1001	mov $BGM_Title,"When the Seagulls Cry" : return
-if %BGM_Id == 1002	mov $BGM_Title,"When the Seagulls Cry (EP4)" : return
 if %BGM_Id == 1011	mov $BGM_Title,"system0(Original Version)" : return
 if %legacy_op == off && %BGM_Id == 1012	mov $BGM_Title,"Igreja of Echoing Vows" : return
 if %legacy_op == on  && %BGM_Id == 1012	mov $BGM_Title,"When the Seagulls Cry" : return
@@ -25071,14 +25008,12 @@ if %BGM_Id == 193 	mov $BGM_Title,"飛翔" : return
 if %BGM_Id == 194 	mov $BGM_Title,"lastendconductor" : return
 if %BGM_Id == 195 	mov $BGM_Title,"Revelations" : return
 if %BGM_Id == 240 	mov $BGM_Title,"白夢の繭 -Ricordando il passato-" : return
-if %BGM_Id == 241 	mov $BGM_Title,"うみねこのなく頃に (ED)" : return
+if %BGM_Id == 241 	mov $BGM_Title,"うみねこのなく頃に" : return
 if %BGM_Id == 1000	mov $BGM_Title,"SuiSui☆SWEETS(^-^)" : return
 if %BGM_Id == 1010	mov $BGM_Title,"Bring The Fate" : return
 if %BGM_Id == 1013  mov $BGM_Title,"Bring The Fate(Ver chiru)" : return
 ;Extra
 if %BGM_Id == 94	mov $BGM_Title,"つるぺったん" : return
-if %BGM_Id == 1001	mov $BGM_Title,"うみねこのなく頃に" : return
-if %BGM_Id == 1002	mov $BGM_Title,"うみねこのなく頃に (EP4)" : return
 if %BGM_Id == 1011	mov $BGM_Title,"システム零 (Original Version)" : return
 if %legacy_op == off && %BGM_Id == 1012	mov $BGM_Title,"誓響のイグレージャ" : return
 if %legacy_op == on  && %BGM_Id == 1012	mov $BGM_Title,"うみねこのなく頃に" : return
@@ -25280,14 +25215,12 @@ if %BGM_Id == 193 	mov $BGM_Title,"Hishou" : return
 if %BGM_Id == 194 	mov $BGM_Title,"lastendconductor" : return
 if %BGM_Id == 195 	mov $BGM_Title,"Revelations" : return
 if %BGM_Id == 240 	mov $BGM_Title,"Byakumu no Mayu -Ricordando il passato-" : return
-if %BGM_Id == 241 	mov $BGM_Title,"Umineko no Naku Koro ni (ED)" : return
+if %BGM_Id == 241 	mov $BGM_Title,"Umineko no Naku Koro ni" : return
 if %BGM_Id == 1000	mov $BGM_Title,"SuiSui☆SWEETS(^-^)" : return
 if %BGM_Id == 1010	mov $BGM_Title,"Bring The Fate" : return
 if %BGM_Id == 1013  mov $BGM_Title,"Bring The Fate(Ver chiru)" : return
 ;Extra
 if %BGM_Id == 94	mov $BGM_Title,"Tsurupettan" : return
-if %BGM_Id == 1001	mov $BGM_Title,"Umineko no Naku Koro ni" : return
-if %BGM_Id == 1002	mov $BGM_Title,"Umineko no Naku Koro ni (EP4)" : return
 if %BGM_Id == 1011	mov $BGM_Title,"system0 (Original Version)" : return
 if %legacy_op == off && %BGM_Id == 1012	mov $BGM_Title,"Senkyou no Igreja" : return
 if %legacy_op == on  && %BGM_Id == 1012	mov $BGM_Title,"Umineko no Naku Koro ni" : return
@@ -25786,7 +25719,6 @@ return
 	mov ?bgm_list[105],1
 	mov ?bgm_list[106],1
 	mov ?bgm_list[107],1
-	mov ?bgm_list[1012],1
 
 *load_bgms_3
 	;ura
@@ -25890,7 +25822,7 @@ return
 	mov ?bgm_list[38],1
 	mov ?bgm_list[39],1
 	mov ?bgm_list[1010],1
-	mov ?bgm_list[1001],1
+	mov ?bgm_list[1012],1
 
 return
 
@@ -28915,8 +28847,7 @@ return
 	if $Free3 == "pt" mov $Free3,"Português"
 	if $Free3 == "wh" mov $Free3,"Witch-Hunt"
 	if $Free3 == "cn" mov $Free3,"Chinese Simp."
-	if $Free3 == "cht" mov $Free3,"Chinese Trad."
-	if $Free3 == "it" mov $Free3,"Italiano"
+	if $Free3 == "cht" mov $Free3,"Chinese Trad." ; if we have zhhk, I think this must "Chinese Trad. (TW)" or something
 	lsp 268,":s;#FFFFFF`{p:8:{w:350:}{a:c:}{fit}" + $Free3 + "}",1280,226
 	lsp 380,":a/2,0,3;graphics\menu_en\config\config_left.png",1210,226
 	lsp 381,":a/2,0,3;graphics\menu_en\config\config_right.png",1640,226
@@ -30841,8 +30772,6 @@ mov %BGM_Id, 1000 : gosub *bgm_gen_box
 mov %BGM_Id, 1010 : gosub *bgm_gen_box
 mov %BGM_Id, 1011 : gosub *bgm_gen_box
 mov %BGM_Id, 1012 : gosub *bgm_gen_box
-mov %BGM_Id, 1001 : gosub *bgm_gen_box
-mov %BGM_Id, 1002 : gosub *bgm_gen_box
 
 if %CHIRU_MODE != 1 jumpf
 	for %BGM_Id = 111 to 195
@@ -30924,7 +30853,7 @@ return
 	if $Free2 == "" return
 	if %Free3 != -1 && %Free3 == %Free2 return
 	
-	if $Free2 == "sound\bgm\op.ogg" || $Free2 == "legacy\bgm\op.ogg" || $Free2 == "legacy\bgm\op1.ogg" jumpf
+	if $Free2 == "sound\bgm\op.ogg" || $Free2 == "legacy\bgm\op.ogg" jumpf
 	if $Free2 == "sound\bgm\tiruop.ogg" || $Free2 == "sound\bgm\ep5_op.ogg" || $Free2 == "sound\bgm\ep7_op.ogg" jumpf
 		; Set the background
 		if %Free3 != -1 tree_set 2,%Free3,"bg","318"
@@ -30941,9 +30870,7 @@ return
 	scrollable_cfg mousectrl,320,0
 	stop
 	loopbgmstop
-	if $Free2 == "sound\bgm\op.ogg" pam 100,"op",1
-	if $Free2 == "legacy\bgm\op.ogg" pam 100,"op2",1
-	if $Free2 == "legacy\bgm\op1.ogg" pam 100,"op1",1
+	if $Free2 == "sound\bgm\op.ogg" || $Free2 == "legacy\bgm\op.ogg" pam 100,"op",1
 	if $Free2 == "sound\bgm\tiruop.ogg" pam 100,"op4",1
 	if $Free2 == "sound\bgm\ep5_op.ogg" pam 100,"op56",1
 	if $Free2 == "sound\bgm\ep7_op.ogg" pam 100,"op78",1
@@ -31954,221 +31881,8 @@ return
 return
 
 *trophy_session_clicks
-	if %savecountClick != 30000 inc %savecountClick : gosub *update_rpc
-	if %savecountClick == 30000 trophy_open savecountTrophy : inc %savecountClick : gosub *update_rpc
-return
-
-; sigma chad based epic totally non hacky discord rpc
-*update_rpc
-	itoa $savecountClick,%savecountClick
-	mov $Free1, "🖱️ " +$savecountClick
-	; turns out the music can be nothing
-	if $BGM_Title == "" mov $BGM_Title,"Jamming with Edward!"
-	mov $Free2, "🎼 " + $BGM_Title
-	; can be split into two chunks if it checks chiru mode but tbh i cant really be bothered to figure out how to jump multiple tildes
-	; need to do a switch case for name_chapter_save to set the dateclock and the scenario name
-
-	if %scenario_Number != 1 jumpf
-	mov $Free3, "legend"
-	if $name_chapter_save == "1_op" mov $Free4, scenario_1_op : mov $Free5, "Senza amore, La verita non si vede." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "1_01" mov $Free4, scenario_1_1 : mov $Free5, date_scenario_1_1 : mov $Free6, "8_00" : jumpf
-	if $name_chapter_save == "1_02" mov $Free4, scenario_1_2 : mov $Free5, date_scenario_1_2 : mov $Free6, "10_30" : jumpf
-	if $name_chapter_save == "1_03" mov $Free4, scenario_1_3 : mov $Free5, date_scenario_1_3 : mov $Free6, "12_00" : jumpf
-	if $name_chapter_save == "1_04" mov $Free4, scenario_1_4 : mov $Free5, date_scenario_1_4 : mov $Free6, "13_00" : jumpf
-	if $name_chapter_save == "1_05" mov $Free4, scenario_1_5 : mov $Free5, date_scenario_1_5 : mov $Free6, "13_30" : jumpf
-	if $name_chapter_save == "1_06" mov $Free4, scenario_1_6 : mov $Free5, date_scenario_1_6 : mov $Free6, "15_00" : jumpf
-	if $name_chapter_save == "1_07" mov $Free4, scenario_1_7 : mov $Free5, date_scenario_1_7 : mov $Free6, "18_00" : jumpf
-	if $name_chapter_save == "1_08" mov $Free4, scenario_1_8 : mov $Free5, date_scenario_1_8 : mov $Free6, "22_00" : jumpf
-	if $name_chapter_save == "1_09" mov $Free4, scenario_1_9 : mov $Free5, date_scenario_1_9 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "1_10" mov $Free4, scenario_1_10 : mov $Free5, date_scenario_1_10 : mov $Free6, "6_00" : jumpf
-	if $name_chapter_save == "1_11" mov $Free4, scenario_1_11 : mov $Free5, date_scenario_1_11 : mov $Free6, "8_45" : jumpf
-	if $name_chapter_save == "1_12" mov $Free4, scenario_1_12 : mov $Free5, date_scenario_1_12 : mov $Free6, "13_00" : jumpf
-	if $name_chapter_save == "1_13" mov $Free4, scenario_1_13 : mov $Free5, date_scenario_1_13 : mov $Free6, "19_00" : jumpf
-	if $name_chapter_save == "1_14" mov $Free4, scenario_1_14 : mov $Free5, date_scenario_1_14 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "1_15" mov $Free4, scenario_1_15 : mov $Free5, date_scenario_1_15 : mov $Free6, "20_00" : jumpf
-	if $name_chapter_save == "1_16" mov $Free4, scenario_1_16 : mov $Free5, date_scenario_1_16 : mov $Free6, "23_30" : jumpf
-	if $name_chapter_save == "1_17" mov $Free4, scenario_1_17 : mov $Free5, "Bring the Fate" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "1_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "1_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "1_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	if %scenario_Number != 2 jumpf
-	mov $Free3, "turn"
-	if $name_chapter_save == "2_op" mov $Free4, scenario_2_op : mov $Free5, "Senza amore, La verita non si vede." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "2_01" mov $Free4, scenario_2_1 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "2_02" mov $Free4, scenario_2_2 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "2_03" mov $Free4, scenario_2_3 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "2_04" mov $Free4, scenario_2_4 : mov $Free5, date_scenario_2_4 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "2_05" mov $Free4, scenario_2_5 : mov $Free5, date_scenario_2_5 : mov $Free6, "10_45" : jumpf
-	if $name_chapter_save == "2_06" mov $Free4, scenario_2_6 : mov $Free5, date_scenario_2_6 : mov $Free6, "13_00" : jumpf
-	if $name_chapter_save == "2_07" mov $Free4, scenario_2_7 : mov $Free5, date_scenario_2_7 : mov $Free6, "18_00" : jumpf
-	if $name_chapter_save == "2_08" mov $Free4, scenario_2_8 : mov $Free5, date_scenario_2_8 : mov $Free6, "22_00" : jumpf
-	if $name_chapter_save == "2_09" mov $Free4, scenario_2_9 : mov $Free5, date_scenario_2_9 : mov $Free6, "6_00" : jumpf
-	if $name_chapter_save == "2_10" mov $Free4, scenario_2_10 : mov $Free5, date_scenario_2_10 : mov $Free6, "6_43" : jumpf
-	if $name_chapter_save == "2_11" mov $Free4, scenario_2_11 : mov $Free5, date_scenario_2_11 : mov $Free6, "6_50" : jumpf
-	if $name_chapter_save == "2_12" mov $Free4, scenario_2_12 : mov $Free5, date_scenario_2_12 : mov $Free6, "7_30" : jumpf
-	if $name_chapter_save == "2_13" mov $Free4, scenario_2_13 : mov $Free5, date_scenario_2_13 : mov $Free6, "13_00" : jumpf
-	if $name_chapter_save == "2_14" mov $Free4, scenario_2_14 : mov $Free5, date_scenario_2_14 : mov $Free6, "13_17" : jumpf
-	if $name_chapter_save == "2_15" mov $Free4, scenario_2_15 : mov $Free5, date_scenario_2_15 : mov $Free6, "18_00" : jumpf
-	if $name_chapter_save == "2_16" mov $Free4, scenario_2_16 : mov $Free5, date_scenario_2_16 : mov $Free6, "21_00" : jumpf
-	if $name_chapter_save == "2_17" mov $Free4, scenario_2_17 : mov $Free5, date_scenario_2_17 : mov $Free6, "23_30" : jumpf
-	if $name_chapter_save == "2_18" mov $Free4, scenario_2_18 : mov $Free5, date_scenario_2_18 : mov $Free6, "23_59" : jumpf
-	if $name_chapter_save == "2_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "2_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "2_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	if %scenario_Number != 3 jumpf
-	mov $Free3, "banquet"
-	if $name_chapter_save == "3_op" mov $Free4, scenario_3_op : mov $Free5, "Senza amore, La verita non si vede." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "3_01" mov $Free4, scenario_3_1 : mov $Free5, date_scenario_3_1 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "3_02" mov $Free4, scenario_3_2 : mov $Free5, date_scenario_3_2 : mov $Free6, "14_00" : jumpf
-	if $name_chapter_save == "3_03" mov $Free4, scenario_3_3 : mov $Free5, date_scenario_3_3 : mov $Free6, "20_00" : jumpf
-	if $name_chapter_save == "3_04" mov $Free4, scenario_3_4 : mov $Free5, date_scenario_3_4 : mov $Free6, "21_00" : jumpf
-	if $name_chapter_save == "3_05" mov $Free4, scenario_3_5 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "3_06" mov $Free4, scenario_3_6 : mov $Free5, date_scenario_3_6 : mov $Free6, "0_00" : jumpf
-	if $name_chapter_save == "3_07" mov $Free4, scenario_3_7 : mov $Free5, date_scenario_3_7 : mov $Free6, "0_21" : jumpf
-	if $name_chapter_save == "3_08" mov $Free4, scenario_3_8 : mov $Free5, date_scenario_3_8 : mov $Free6, "6_00" : jumpf
-	if $name_chapter_save == "3_09" mov $Free4, scenario_3_9 : mov $Free5, date_scenario_3_9 : mov $Free6, "7_00" : jumpf
-	if $name_chapter_save == "3_10" mov $Free4, scenario_3_10 : mov $Free5, date_scenario_3_10 : mov $Free6, "9_00" : jumpf
-	if $name_chapter_save == "3_11" mov $Free4, scenario_3_11 : mov $Free5, date_scenario_3_11 : mov $Free6, "10_00" : jumpf
-	if $name_chapter_save == "3_12" mov $Free4, scenario_3_12 : mov $Free5, date_scenario_3_12 : mov $Free6, "10_30" : jumpf
-	if $name_chapter_save == "3_13" mov $Free4, scenario_3_13 : mov $Free5, date_scenario_3_13 : mov $Free6, "11_00" : jumpf
-	if $name_chapter_save == "3_14" mov $Free4, scenario_3_14 : mov $Free5, date_scenario_3_14 : mov $Free6, "13_00" : jumpf
-	if $name_chapter_save == "3_15" mov $Free4, scenario_3_15 : mov $Free5, date_scenario_3_15 : mov $Free6, "13_30" : jumpf
-	if $name_chapter_save == "3_16" mov $Free4, scenario_3_16 : mov $Free5, date_scenario_3_16 : mov $Free6, "17_44" : jumpf
-	if $name_chapter_save == "3_17" mov $Free4, scenario_3_17 : mov $Free5, date_scenario_3_17 : mov $Free6, "18_03" : jumpf
-	if $name_chapter_save == "3_18" mov $Free4, scenario_3_18 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "3_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "3_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "3_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	if %scenario_Number != 4 jumpf
-	mov $Free3, "alliance"
-	if $name_chapter_save == "4_op" mov $Free4, scenario_4_op : mov $Free5, "Senza amore, La verita non si vede." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_01" mov $Free4, scenario_4_1 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_02" mov $Free4, scenario_4_2 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_03" mov $Free4, scenario_4_3 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_04" mov $Free4, scenario_4_4 : mov $Free5, date_scenario_4_4 : mov $Free6, "14_51" : jumpf
-	if $name_chapter_save == "4_05" mov $Free4, scenario_4_5 : mov $Free5, date_scenario_4_5 : mov $Free6, "18_07" : jumpf
-	if $name_chapter_save == "4_06" mov $Free4, scenario_4_6 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_07" mov $Free4, scenario_4_7 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_08" mov $Free4, scenario_4_8 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_09" mov $Free4, scenario_4_9 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_10" mov $Free4, scenario_4_10 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_11" mov $Free4, scenario_4_11 : mov $Free5, date_scenario_4_11 : mov $Free6, "21_48" : jumpf
-	if $name_chapter_save == "4_12" mov $Free4, scenario_4_12 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_13" mov $Free4, scenario_4_13 : mov $Free5, date_scenario_4_13 : mov $Free6, "22_37" : jumpf
-	if $name_chapter_save == "4_14" mov $Free4, scenario_4_14 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_15" mov $Free4, scenario_4_15 : mov $Free5, date_scenario_4_15 : mov $Free6, "23_00" : jumpf
-	if $name_chapter_save == "4_16" mov $Free4, scenario_4_16 : mov $Free5, date_scenario_4_16 : mov $Free6, "23_11" : jumpf
-	if $name_chapter_save == "4_17" mov $Free4, scenario_4_17 : mov $Free5, date_scenario_4_17 : mov $Free6, "23_47" : jumpf
-	if $name_chapter_save == "4_18" mov $Free4, scenario_4_18 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_19" mov $Free4, scenario_4_19 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "4_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	if %scenario_Number != 5 jumpf
-	mov $Free3, "end"
-	if $name_chapter_save == "5_op" mov $Free4, scenario_5_op : mov $Free5, "Illuminato." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_01" mov $Free4, scenario_5_1 : mov $Free5, date_scenario_5_1 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_02" mov $Free4, scenario_5_2 : mov $Free5, date_scenario_5_2 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_03" mov $Free4, scenario_5_3 : mov $Free5, date_scenario_5_3 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_04" mov $Free4, scenario_5_4 : mov $Free5, date_scenario_5_4 : mov $Free6, "11_00" : jumpf
-	if $name_chapter_save == "5_05" mov $Free4, scenario_5_5 : mov $Free5, date_scenario_5_5 : mov $Free6, "19_00" : jumpf
-	if $name_chapter_save == "5_06" mov $Free4, scenario_5_6 : mov $Free5, date_scenario_5_6 : mov $Free6, "22_00" : jumpf
-	if $name_chapter_save == "5_07" mov $Free4, scenario_5_7 : mov $Free5, date_scenario_5_7 : mov $Free6, "22_47" : jumpf
-	if $name_chapter_save == "5_08" mov $Free4, scenario_5_8 : mov $Free5, date_scenario_5_8 : mov $Free6, "23_49" : jumpf
-	if $name_chapter_save == "5_09" mov $Free4, scenario_5_9 : mov $Free5, date_scenario_5_9 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_10" mov $Free4, scenario_5_10 : mov $Free5, date_scenario_5_10 : mov $Free6, "7_00" : jumpf
-	if $name_chapter_save == "5_11" mov $Free4, scenario_5_11 : mov $Free5, date_scenario_5_11 : mov $Free6, "8_04" : jumpf
-	if $name_chapter_save == "5_12" mov $Free4, scenario_5_12 : mov $Free5, date_scenario_5_12 : mov $Free6, "11_00" : jumpf
-	if $name_chapter_save == "5_13" mov $Free4, scenario_5_13 : mov $Free5, date_scenario_5_13 : mov $Free6, "12_33" : jumpf
-	if $name_chapter_save == "5_14" mov $Free4, scenario_5_14 : mov $Free5, date_scenario_5_14 : mov $Free6, "24_00" : jumpf
-	if $name_chapter_save == "5_15" mov $Free4, scenario_5_15 : mov $Free5, date_scenario_5_15 : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "5_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	if %scenario_Number != 6 jumpf
-	mov $Free3, "dawn"
-	if $name_chapter_save == "6_op" mov $Free4, scenario_6_op : mov $Free5, "Illuminato." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_01" mov $Free4, scenario_6_1 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_02" mov $Free4, scenario_6_2 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_03" mov $Free4, scenario_6_3 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_04" mov $Free4, scenario_6_4 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_05" mov $Free4, scenario_6_5 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_06" mov $Free4, scenario_6_6 : mov $Free5, date_scenario_6_6 : mov $Free6, "22_03" : jumpf
-	if $name_chapter_save == "6_07" mov $Free4, scenario_6_7 : mov $Free5, date_scenario_6_7 : mov $Free6, "22_59" : jumpf
-	if $name_chapter_save == "6_08" mov $Free4, scenario_6_8 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_09" mov $Free4, scenario_6_9 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_10" mov $Free4, scenario_6_10 : mov $Free5, date_scenario_6_10 : mov $Free6, "0_07" : jumpf
-	if $name_chapter_save == "6_11" mov $Free4, scenario_6_11 : mov $Free5, date_scenario_6_11 : mov $Free6, "0_12" : jumpf
-	if $name_chapter_save == "6_12" mov $Free4, scenario_6_12 : mov $Free5, date_scenario_6_12 : mov $Free6, "1_11" : jumpf
-	if $name_chapter_save == "6_13" mov $Free4, scenario_6_13 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_14" mov $Free4, scenario_6_14 : mov $Free5, date_scenario_6_14 : mov $Free6, "2_22" : jumpf
-	if $name_chapter_save == "6_15" mov $Free4, scenario_6_15 : mov $Free5, date_scenario_6_15 : mov $Free6, "2_34" : jumpf
-	if $name_chapter_save == "6_16" mov $Free4, scenario_6_16 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_17" mov $Free4, scenario_6_17 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_18" mov $Free4, scenario_6_18 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "6_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	if %scenario_Number != 7 jumpf
-	mov $Free3, "requiem"
-	if $name_chapter_save == "7_op" mov $Free4, scenario_7_op : mov $Free5, "Illuminato." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_01" mov $Free4, scenario_7_1 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_02" mov $Free4, scenario_7_2 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_03" mov $Free4, scenario_7_3 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_04" mov $Free4, scenario_7_4 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_05" mov $Free4, scenario_7_5 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_06" mov $Free4, scenario_7_6 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_07" mov $Free4, scenario_7_7 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_08" mov $Free4, scenario_7_8 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_09" mov $Free4, scenario_7_9 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_10" mov $Free4, scenario_7_10 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_11" mov $Free4, scenario_7_11 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_12" mov $Free4, scenario_7_12 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_13" mov $Free4, scenario_7_13 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_14" mov $Free4, scenario_7_14 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_15" mov $Free4, scenario_7_15 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_16" mov $Free4, scenario_7_16 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_17" mov $Free4, scenario_7_17 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_18" mov $Free4, scenario_7_18 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "7_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	if %scenario_Number != 8 jumpf
-	mov $Free3, "twilight"
-	if $name_chapter_save == "8_op" mov $Free4, scenario_8_op : mov $Free5, "Illuminato." : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_01" mov $Free4, scenario_8_1 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_02" mov $Free4, scenario_8_2 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_03" mov $Free4, scenario_8_3 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_04" mov $Free4, scenario_8_4 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_05" mov $Free4, scenario_8_5 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_06" mov $Free4, scenario_8_6 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_07" mov $Free4, scenario_8_7 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_08" mov $Free4, scenario_8_8 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_09" mov $Free4, scenario_8_9 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_10" mov $Free4, scenario_8_10 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_11" mov $Free4, scenario_8_11 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_12" mov $Free4, scenario_8_12 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_13" mov $Free4, scenario_8_13 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_14" mov $Free4, scenario_8_14 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_15" mov $Free4, scenario_8_15 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_16" mov $Free4, scenario_8_16 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_17" mov $Free4, scenario_8_17 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_18" mov $Free4, scenario_8_18 : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_tea" mov $Free4, "Tea Party" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_ura" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	if $name_chapter_save == "8_omake" mov $Free4, "????" : mov $Free5, "????" : mov $Free6, "broken" : jumpf
-	~
-	
-	itoa $Free7, %savecountSess - %savecountTime
-	if $USE_DISCORD == "noval" discordrpc $Free2, $Free4, $Free3, $Free1, $Free6, $Free5, $Free7
-	;music, scenario, episode, clicks, clocktime, date, start time
+	if %savecountClick != 30000 inc %savecountClick
+	if %savecountClick == 30000 trophy_open savecountTrophy : inc %savecountClick
 return
 
 *script_state
@@ -32375,7 +32089,7 @@ return
 	if %msgwnd_type = 1 setwindowd msgwnd2
 	if %msgwnd_type = 2 setwindowd msgwnd3
 	if %msgwnd_type = 3 setwindowd msgwnd4
-	setwindowd_dimensions 167,736,1586,295
+	setwindowd_dimensions 167,725,1586,306
 	setwindowd_padding text_main_pad_t,text_main_pad_r,text_main_pad_b,text_main_pad_l
 	setwindowd_name_padding text_name_pad_t,text_name_pad_r,text_name_pad_b,text_name_pad_l
 	setwindowd_main_region 240,14,1408,274,77
@@ -32387,7 +32101,7 @@ return
 	getparam %setwindow_x,%setwindow_y
 
 	;if we passed no params we will use the default ones (0,0 is just senseless)
-	if %setwindow_x = 0 mov %setwindow_x,160
+	if %setwindow_x = 0 mov %setwindow_x,80
 	if %setwindow_y = 0 mov %setwindow_y,320
 	gosub *set_window_simple_update
 	mov %log_sw_x,%setwindow_x
@@ -33165,8 +32879,6 @@ if localisation == "ru" mov %game_language,1 : mov $Free3,"Русская"
 if localisation == "pt" mov %game_language,2 : mov $Free3,"Português"
 if localisation == "cn" mov %game_language,3 : mov $Free3,"Chinese Simp."
 if localisation == "cht" mov %game_language,4 : mov $Free3,"Chinese Trad."
-if localisation == "it" mov %game_language,5 : mov $Free3,"Italiano"
-if localisation == "tr" mov %game_language,6 : mov $Free3,"Witch Love"
 
 getscriptnum %Free1
 for %Free2 = 0 to %Free1-1
@@ -33225,22 +32937,6 @@ if %game_language != 4 jumpf
 	lsp 302,":s;#FFFFFF`{p:8:視窗大小}",135,%y+100
 	lsp 303,":s;#FFFFFF`{p:8:顯示模式}",135,%y+200
 	lsp 304,":s;#FFFFFF`{p:8:操作介面}",135,%y+300
-~
-
-if %game_language != 5 jumpf
-	lsp 300,":s;#FFFFFF`{p:10:——————}{p:9:{a:c: Configurazione Iniziale di Gioco }{p:10:——————}}",135,%y-100
-	lsp 301,":s;#FFFFFF`{p:8:Lingua di Gioco}",135,%y
-	lsp 302,":s;#FFFFFF`{p:8:Dimensione Finestra}",135,%y+100
-	lsp 303,":s;#FFFFFF`{p:8:Schermata}",135,%y+200
-	lsp 304,":s;#FFFFFF`{p:8:Interfaccia}",135,%y+300
-~
-
-if %game_language != 6 jumpf
-	lsp 300,":s;#FFFFFF`{p:10:——————}{p:9:{a:c: Oyun Ayarları }{p:10:——————}}",135,%y-100
-	lsp 301,":s;#FFFFFF`{p:8:Oyun dili}",135,%y
-	lsp 302,":s;#FFFFFF`{p:8:Pencere boyutu}",135,%y+100
-	lsp 303,":s;#FFFFFF`{p:8:Pencere modu}",135,%y+200
-	lsp 304,":s;#FFFFFF`{p:8:Oynanış}",135,%y+300
 ~
 
 *first_setting2
@@ -33391,8 +33087,7 @@ return
 	if $Free3 == "ru" mov $Free3,"Русская" mov %game_language,1
 	if $Free3 == "pt" mov $Free3,"Português" mov %game_language,2
 	if $Free3 == "cn" mov $Free3,"Chinese Simp." mov %game_language,3
-	if $Free3 == "cht" mov $Free3,"Chinese Trad." mov %game_language,4
-	if $Free3 == "it" mov $Free3,"Italiano" mov %game_language,5
+	if $Free3 == "cht" mov $Free3,"Chinese Simp." mov %game_language,4
 	lsp 273,":s;#FFFFFF`{p:8:{w:350:}{a:c:}{fit}" + $Free3 + "}",1280,%y
 
 	lsp 269,":a/2,0,3;graphics\menu_en\config\config_left.png",1210,%y
@@ -33440,22 +33135,6 @@ if %game_language != 4 jumpf
 	notif  %full_window_auto = 0 lsp 281,":s;#C7C7C7#FFFFFF`{p:8:自动}",1559,%y+200
 	if %full_window_auto = 0 lsp 281,":s;#FFFFFF`{p:8:自动}",1559,%y+200
 ~
-if %game_language != 5 jumpf
-	notif  %full_window_auto = 1 lsp 279,":s;#C7C7C7#FFFFFF`{p:8:In Finestra}",850,%y+200
-	if %full_window_auto = 1 lsp 279,":s;#FFFFFF`{p:8:In Finestra}",850,%y+200
-	notif  %full_window_auto = 2 lsp 280,":s;#C7C7C7#FFFFFF`{p:8:Intera}",1280,%y+200
-	if %full_window_auto = 2 lsp 280,":s;#FFFFFF`{p:8:Intera}",1280,%y+200
-	notif  %full_window_auto = 0 lsp 281,":s;#C7C7C7#FFFFFF`{p:8:Auto}",1559,%y+200
-	if %full_window_auto = 0 lsp 281,":s;#FFFFFF`{p:8:Auto}",1559,%y+200
-~
-if %game_language != 6 jumpf
-	notif  %full_window_auto = 1 lsp 279,":s;#C7C7C7#FFFFFF`{p:8:Pencereli}",850,%y+200
-	if %full_window_auto = 1 lsp 279,":s;#FFFFFF`{p:8:Pencereli}",850,%y+200
-	notif  %full_window_auto = 2 lsp 280,":s;#C7C7C7#FFFFFF`{p:8:Tam Ekran}",1213,%y+200
-	if %full_window_auto = 2 lsp 280,":s;#FFFFFF`{p:8:Tam Ekran}",1213,%y+200
-	notif  %full_window_auto = 0 lsp 281,":s;#C7C7C7#FFFFFF`{p:8:Otomatik}",1559,%y+200
-	if %full_window_auto = 0 lsp 281,":s;#FFFFFF`{p:8:Otomatik}",1559,%y+200
-~
 return
 
 
@@ -33491,18 +33170,6 @@ if %game_language != 4 jumpf
 	notif %interface_kb_dual = 1 lsp 271,":s;#C7C7C7#FFFFFF`{p:8:DualShock}",1377,%y+300
 	if %interface_kb_dual = 1 lsp 271,":s;#FFFFFF`{p:8:DualShock}",1377,%y+300
 ~
-if %game_language != 5 jumpf
-	notif %interface_kb_dual = 0 lsp 270,":s;#C7C7C7#FFFFFF`{p:8:KB+Mouse}",1010,%y+300
-	if %interface_kb_dual = 0 lsp 270,":s;#FFFFFF`{p:8:KB+Mouse}",1010,%y+300 : vsp 100,0
-	notif %interface_kb_dual = 1 lsp 271,":s;#C7C7C7#FFFFFF`{p:8:DualShock}",1377,%y+300
-	if %interface_kb_dual = 1 lsp 271,":s;#FFFFFF`{p:8:DualShock}",1377,%y+300
-~
-if %game_language != 6 jumpf
-	notif %interface_kb_dual = 0 lsp 270,":s;#C7C7C7#FFFFFF`{p:8:KB+Mouse}",1010,%y+300
-	if %interface_kb_dual = 0 lsp 270,":s;#FFFFFF`{p:8:KB+Mouse}",1010,%y+300 : vsp 100,0
-	notif %interface_kb_dual = 1 lsp 271,":s;#C7C7C7#FFFFFF`{p:8:DualShock}",1377,%y+300
-	if %interface_kb_dual = 1 lsp 271,":s;#FFFFFF`{p:8:DualShock}",1377,%y+300
-~
 return
 
 
@@ -33518,8 +33185,6 @@ return
 	if %game_language = 2 lsp 299,":s;#FFFFFF`{p:8:{w:350:}{a:c:}{fit}Personalizada}",1280,%y+100
 	if %game_language = 3 lsp 299,":s;#FFFFFF`{p:8:{w:350:}{a:c:}{fit}自定义}",1280,%y+100
 	if %game_language = 4 lsp 299,":s;#FFFFFF`{p:8:{w:350:}{a:c:}{fit}自定義}",1280,%y+100
-	if %game_language = 5 lsp 299,":s;#FFFFFF`{p:8:{w:350:}{a:c:}{fit}Personalizzata}",1280,%y+100
-	if %game_language = 6 lsp 299,":s;#FFFFFF`{p:8:{w:350:}{a:c:}{fit}Özel}",1280,%y+100
 	~
 	lsp 297,":a/2,0,3;graphics\menu_en\config\config_left.png",1210,%y+112
 	lsp 298,":a/2,0,3;graphics\menu_en\config\config_right.png",1640,%y+112
@@ -33540,12 +33205,6 @@ if %game_language != 3 jumpf
 ~
 if %game_language != 4 jumpf
 	lsp 272,":s;#C7C7C7#FFFFFF`{p:8:套用}",800,%y+500
-~
-if %game_language != 5 jumpf
-	lsp 272,":s;#C7C7C7#FFFFFF`{p:8:Applica}",800,%y+500
-~
-if %game_language != 6 jumpf
-	lsp 272,":s;#C7C7C7#FFFFFF`{p:8:Onayla}",800,%y+500
 ~
 return
 
@@ -39702,7 +39361,7 @@ return
 	mov ?r[8][EN2][condition],-1
 	mov ?r[8][bea][condition],-1
 	
-	lsp r_cha_back_lsp,":a;graphics\menu\murder\murder_story_answer_left_bg.png",200,150
+	lsp r_cha_back_lsp,":c;graphics\menu_cn\murder\murder_story_answer_left_bg.png",200,150
 	getspsize r_cha_back_lsp,%Free1,%Free2
 	border_pad_push 5
 	lsp 201,ep8_9_criminal,%Free1/2+200,criminal_header_y		;犯人を選択してください
